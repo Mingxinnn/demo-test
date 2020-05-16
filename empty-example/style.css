@@ -1,0 +1,155 @@
+.transition-fade{
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is_animating .transition-fade{
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity: 0;
+  transform: translateX(0);
+}
+
+
+
+canvas {
+  display: block;
+}
+
+.ButtonRow {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.Page {
+  position: fixed!important;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.PageHeader {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.PaginationText {
+  padding-top: 40px;
+}
+
+
+.ButtonBlack.btn,
+.ButtonBlack.btn:hover,
+.ButtonBlack.btn:focus,
+.ButtonBlack.btn:disabled,
+.ButtonBlack.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: black;
+  border-color: black;
+}
+
+.StartButton {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.IntroPageTopContainer {
+  top: 30%;
+  height: 70%;
+  display: flex;
+  /* max-width: 1000px; */
+  margin: auto;
+}
+
+.IntroPageLeftContainer {
+  width: 50%;
+  padding-top: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.IntroPageIntro {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+}
+
+.IntroPageSubtitle {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.IntroPageIcon {
+  padding-top: 140px;
+}
+.IntroPageRightContainer {
+  /* height: 100%;
+  padding-right: 0;
+  padding-bottom: 0; */
+  top: 800px;
+
+  top: 0;
+  bottom: 0;
+}
+
+.SelectedPicture {
+  text-align:center;
+  margin: auto;
+  position: absolute;
+  top: 800px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Title {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Subline {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 500px;
+  left: 350px;
+  right: 350px;
+  bottom: 0;
+}
+
+.NextPicture {
+  text-align:center;
+  margin: auto;
+  position: absolute;
+  top: 1230px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.PreviousPicture {
+  text-align:center;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
